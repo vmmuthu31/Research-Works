@@ -58,7 +58,7 @@ class Ui_Form(object):
         self.label_2.setStyleSheet("background-color:rgba(0, 0, 0, 80);\n"
 "border-top-left-radius: 50px;")
         self.label_2.setText("")
-        self.label_2.setPixmap(QtGui.QPixmap("D:/3d-model-1024x722.jpeg"))
+        self.label_2.setPixmap(QtGui.QPixmap("images/3d-model-1024x722.jpeg"))
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.widget)
         self.label_3.setGeometry(QtCore.QRect(320, 30, 240, 430))
