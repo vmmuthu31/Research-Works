@@ -1,10 +1,11 @@
-import email
-import re
+import sys
+from PyQt5.QtWidgets import *
+from PyQt5.QtCore import *
 from PyQt5 import QtWidgets, QtCore
 from form import Ui_Form
 import sys
 import sqlite3, bcrypt
-
+from homepage import Ui_MainWindow
 class LoginApp(QtWidgets.QWidget, Ui_Form):
     def changeForm(self):
         if self.side.isChecked():
@@ -65,10 +66,11 @@ class LoginApp(QtWidgets.QWidget, Ui_Form):
         out = list(quary.fetchall())
         print(out[0][0])
         if bcrypt.checkpw(password.encode('utf-8'),out[0][0]):
-            print("correct") 
+            self.sub_window = SubWindow()
+             # Button Event
+            self.sub_window.show
         else:
-            print("worng")
-                
+            print("wrong")
                 
     def __init__(self):
         super(LoginApp, self).__init__()
@@ -85,6 +87,21 @@ class LoginApp(QtWidgets.QWidget, Ui_Form):
         self.regbtn.clicked.connect(self.signin)
         self.logbtn.clicked.connect(self.login)
 
+class SubWindow(QWidget):
+     def __init__(self):
+         super(SubWindow, self).__init__()
+         self.resize(400, 300)
+
+         # Label
+         self.label = QLabel(self)
+         self.label.setGeometry(0, 0, 400, 300)
+         self.label.setText('Sub Window')
+         self.label.setAlignment(Qt.AlignCenter)
+         self.label.setStyleSheet('font-size:40px')
+class LoginApp1(QtWidgets.QWidget, Ui_MainWindow):
+   def __init__(self):
+         super(LoginApp1, self).__init__()
+         self.resize(400, 300)
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     Form = LoginApp()
