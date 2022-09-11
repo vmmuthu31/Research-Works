@@ -58,7 +58,7 @@ class Ui_Login(object):
         self.label_2.setStyleSheet("background-color:rgba(0, 0, 0, 80);\n"
 "border-top-left-radius: 50px; background-image: url(\'https://formdynamics.io/wp-content/uploads/2020/03/3d-model-1024x722.jpeg\');")
         self.label_2.setText("")
-        self.label_2.setPixmap(QtGui.QPixmap("../3d-model-1024x722.jpeg"))
+        self.label_2.setPixmap(QtGui.QPixmap("images/3d-model-1024x722.jpeg"))
         self.label_2.setObjectName("label_2")
         self.label_6 = QtWidgets.QLabel(self.widget)
         self.label_6.setGeometry(QtCore.QRect(50, 130, 230, 130))
@@ -225,7 +225,7 @@ class Ui_Login(object):
 
     def retranslateUi(self, Login):
         _translate = QtCore.QCoreApplication.translate
-        Login.setWindowTitle(_translate("Login", "Fautacon"))
+        Login.setWindowTitle(_translate("Login", "Futaucon"))
         self.label_7.setText(_translate("Login", "Futaucon"))
         self.label_8.setText(_translate("Login", "3D Model Generation"))
         self.label_9.setText(_translate("Login", "Register"))

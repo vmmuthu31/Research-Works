@@ -10,7 +10,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
+        MainWindow.setObjectName("ClickDraw")
         MainWindow.resize(1078, 668)
         MainWindow.setLayoutDirection(QtCore.Qt.LeftToRight)
         MainWindow.setStyleSheet("margin:0px;")
@@ -86,7 +86,7 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_29.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("C:/Users/mvair/Downloads/kisspng-computer-icons-portable-network-graphics-throbber-5c7cefa7a55182.3059138615516916876772-removebg-preview.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap("images/kisspng-computer-icons-portable-network-graphics-throbber-5c7cefa7a55182.3059138615516916876772-removebg-preview.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_29.setIcon(icon2)
         self.pushButton_29.setIconSize(QtCore.QSize(50, 50))
         self.pushButton_29.setObjectName("pushButton_29")
@@ -105,7 +105,7 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_30.setText("")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("C:/Users/mvair/Downloads/icons8-pass-48.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon3.addPixmap(QtGui.QPixmap("images/icons8-pass-48.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_30.setIcon(icon3)
         self.pushButton_30.setIconSize(QtCore.QSize(50, 50))
         self.pushButton_30.setObjectName("pushButton_30")
@@ -124,7 +124,7 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_31.setText("")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("C:/Users/mvair/Downloads/auditing-icon-6-removebg-preview.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon4.addPixmap(QtGui.QPixmap("images/auditing-icon-6-removebg-preview.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_31.setIcon(icon4)
         self.pushButton_31.setIconSize(QtCore.QSize(50, 50))
         self.pushButton_31.setObjectName("pushButton_31")
@@ -143,7 +143,7 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_32.setText("")
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("C:/Users/mvair/Downloads/icone-de-parametres-et-de-parametres-verte-removebg-preview.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon5.addPixmap(QtGui.QPixmap("images/icone-de-parametres-et-de-parametres-verte-removebg-preview.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_32.setIcon(icon5)
         self.pushButton_32.setIconSize(QtCore.QSize(50, 50))
         self.pushButton_32.setObjectName("pushButton_32")
@@ -162,7 +162,7 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_33.setText("")
         icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap("C:/Users/mvair/Downloads/download-removebg-preview.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon6.addPixmap(QtGui.QPixmap("images/download-removebg-preview.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_33.setIcon(icon6)
         self.pushButton_33.setIconSize(QtCore.QSize(50, 50))
         self.pushButton_33.setObjectName("pushButton_33")
@@ -269,12 +269,12 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "ClickDraw"))
         self.pushButton_23.setText(_translate("MainWindow", "2222"))
         self.pushButton_24.setText(_translate("MainWindow", "About"))
         self.pushButton_25.setText(_translate("MainWindow", "Help!"))
         self.pushButton_26.setText(_translate("MainWindow", "Logout"))
-        self.label_5.setText(_translate("MainWindow", "Welcome back to ClickDraw!"))
+        self.label_5.setText(_translate("ClickDraw", "Welcome back to ClickDraw!"))
 
 
 if __name__ == "__main__":

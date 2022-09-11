@@ -58,7 +58,7 @@ class Ui_Register(object):
         self.label_2.setStyleSheet("background-color:rgba(0, 0, 0, 80);\n"
 "border-top-left-radius: 50px; background-image: url(\'https://formdynamics.io/wp-content/uploads/2020/03/3d-model-1024x722.jpeg\');")
         self.label_2.setText("")
-        self.label_2.setPixmap(QtGui.QPixmap("../3d-model-1024x722.jpeg"))
+        self.label_2.setPixmap(QtGui.QPixmap("images/3d-model-1024x722.jpeg"))
         self.label_2.setObjectName("label_2")
         self.label_6 = QtWidgets.QLabel(self.widget)
         self.label_6.setGeometry(QtCore.QRect(40, 100, 230, 130))
